@@ -416,7 +416,7 @@ p.indent {
 			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		*/	background-color: transparent;
-			border: solid 1px #6b705c;
+			border: solid 1px #a5a58d;
 			border-radius: 4px;
 			width: 2.65em;
 			height: 2.65em;
