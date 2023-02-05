@@ -169,6 +169,7 @@ p.indent {
     text-indent: 30px;
 }
 
+/*
 	h1 {
 		font-size: 2.2em;
 		font-weight: 600;
@@ -197,8 +198,8 @@ p.indent {
 			}
 
 		}
-
-	h2 {
+*/
+	h1 {
 		font-weight: 500;
 		line-height: 0.2;
 		letter-spacing: 0.02em;
@@ -207,22 +208,15 @@ p.indent {
 		text-align: center;
 		border-bottom: 0.5px solid #c9c9c9;
 		margin: 10px 0 20px;
+		color: #a5a58d;
 	}
 
-	h2 span {
+	h1 span {
 	background:#fff;
     padding:0 10px;
 }
 
-	h3 {
-		font-weight: 600;
-		line-height: .3;
-		margin: 0 0 .5em 0;
-        text-align: left;
-		letter-spacing: 0.02em;
-	}
-
-	h4 {
+	h2 {
 		font-weight: 600;
 		line-height: .3;
 		margin: 1.2em 0 1em 0;
@@ -230,27 +224,49 @@ p.indent {
 		letter-spacing: 0.02em;
 	}
 
-	h5 {
+	h3 {
 		font-weight: 600;
 		line-height: 0.3;
 		margin: 0 0 1.2em 0;
         text-align: center;
 		letter-spacing: 0.01em;
 	}
+
+	h4 {
+		font-weight: 600;
+		line-height: .3;
+		margin: 0 0 .5em 0;
+        text-align: left;
+		letter-spacing: 0.02em;
+	}
+
+	h5 {
+		font-weight: 600;
+		line-height: .3;
+		margin: 0.1em 0 .5em 0;
+        text-align: left;
+		letter-spacing: 0.02em;
+	}
+
 		h6 {
-		font-weight: 500;
-		line-height: 1.5;
-		margin: 0 0 1em 0;
-        text-align: center;
-		letter-spacing: 0.15em;
+		font-weight: 600;
+		line-height: .3;
+		margin: 1.8rem 0 .5em 0;
+        text-align: left;
+		letter-spacing: 0.02em;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 		}
 
-	h2 {
+	h1 {
 		font-size: 1.2em;
+	}
+
+
+	h2 {
+		font-size: 2em;
 	}
 
 	h3 {
@@ -258,7 +274,7 @@ p.indent {
 	}
 
 	h4 {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	h5 {
@@ -266,7 +282,7 @@ p.indent {
 	}
 
 	h6 {
-		font-size: 0.8em;
+		font-size: 1.5em;
 	}
 
 	@media screen and (max-width: 980px) {
@@ -280,7 +296,7 @@ p.indent {
 	@media screen and (max-width: 736px) {
 
 		h2 {
-			font-size: 1em;
+			font-size: 2em;
 		}
 
 		h3 {
