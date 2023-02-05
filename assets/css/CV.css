@@ -161,8 +161,12 @@ input, select, textarea {
 	}
 
 	.hangingindent {
-  padding-left: 22px ;
-  text-indent: -22px ;
+		padding-left: 22px ;
+		text-indent: -22px ;
+}
+
+p.indent {
+    text-indent: 30px;
 }
 
 	h1 {
