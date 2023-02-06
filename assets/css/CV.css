@@ -1143,12 +1143,13 @@ p.indent {
 		#footer .copyright {
 			letter-spacing: 0.2rem;
 			font-size: 0.6rem;
+			color: rgba(88, 88, 88, 0.5);
 			opacity: 1;
-			margin-bottom: 2;
+			margin-bottom: 1;
 			text-transform: uppercase;
 		}
 
-		/*body.is-article-visible #footer {
+		body.is-article-visible #footer {
 			-moz-transform: scale(0.95);
 			-webkit-transform: scale(0.95);
 			-ms-transform: scale(0.95);
@@ -1157,13 +1158,13 @@ p.indent {
 			-webkit-filter: blur(0.1rem);
 			-ms-filter: blur(0.1rem);
 			filter: blur(0.1rem);
-			opacity: 1;
+			opacity: 0.75;
 		}
 
 		body.is-preload #footer {
-			opacity: 1;
+			opacity: 0.75;
 		}
-*/
+
 
 /* Wrapper */
 
