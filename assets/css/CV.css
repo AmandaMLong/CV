@@ -1,6 +1,9 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
+/* -----------------------------------------------
+                    GLOBAL STYLES
+-------------------------------------------------- */
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -66,9 +69,10 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Basic */
-
-	@-ms-viewport {
+/* -----------------------------------------------
+                   BASIC STYLES
+-------------------------------------------------- */
+@-ms-viewport {
 		width: device-width;
 	}
 
@@ -107,8 +111,9 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-/* Type */
-
+/* -----------------------------------------------
+                    STYLE TYPE
+-------------------------------------------------- */
 	body, input, select, textarea {
 		color: #585858;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -118,7 +123,6 @@ input, select, textarea {
 	}
 
 		@media screen and (max-width: 1680px) {
-
 			body, input, select, textarea {
 				font-size: 14pt;
 			}
@@ -126,12 +130,19 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
-
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 11pt;
 			}
 
 		}
+
+		@media screen and (max-width: 736px) {
+			body, input, select, textarea {
+				font-size: 10pt;
+			}
+
+		}
+
 
 	a {
 		/*-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
@@ -161,9 +172,9 @@ input, select, textarea {
 	}
 
 	.hangingindent {
-  padding-left: 22px ;
-  text-indent: -22px ;
-  }
+        padding-left: 22px ;
+        text-indent: -22px ;
+    }
 
         p.indent {
             text-indent: 30px;
@@ -201,34 +212,37 @@ input, select, textarea {
 	h1 {
 		font-weight: 500;
 		line-height: 0.2;
-		letter-spacing: 0.02em;
+		letter-spacing: 0.01em;
 		text-align: center;
 		width: 100%;
 		text-align: center;
 		border-bottom: 0.5px solid #c9c9c9;
 		margin: 10px 0 20px;
 		color: #a5a58d;
+		font-size: 1.2em;
 	}
 
 	h1 span {
-	background:#fff;
-    padding:0 10px;
-}
+	    background:#fff;
+        padding:0 10px;
+    }
 
 	h2 {
 		font-weight: 600;
-		line-height: .3;
-		margin: 1.2em 0 1em 0;
+		line-height: 1;
+		margin: .5em 0 0em 0;
         text-align: center;
-		letter-spacing: 0.02em;
+		letter-spacing: 0.01em;
+		font-size: 2em;
 	}
 
 	h3 {
 		font-weight: 600;
-		line-height: 0.3;
-		margin: 0 0 1.2em 0;
+		line-height: 1;
+		margin: .3em 0 .1em 0;
         text-align: center;
 		letter-spacing: 0.01em;
+		font-size: 1.3em;
 	}
 
 	h4 {
@@ -237,6 +251,7 @@ input, select, textarea {
 		margin: 0 0 .5em 0;
         text-align: left;
 		letter-spacing: 0.02em;
+		font-size: 1.5em;
 	}
 
 	h5 {
@@ -245,6 +260,7 @@ input, select, textarea {
 		margin: 0.1em 0 .5em 0;
         text-align: left;
 		letter-spacing: 0.02em;
+		font-size: 1.5em;
 	}
 
 		h6 {
@@ -253,36 +269,12 @@ input, select, textarea {
 		margin: 1.8rem 0 .5em 0;
         text-align: left;
 		letter-spacing: 0.02em;
+		font-size: 1.5em;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 		}
-
-	h1 {
-		font-size: 1.2em;
-	}
-
-
-	h2 {
-		font-size: 2em;
-	}
-
-	h3 {
-		font-size: 1.5em;
-	}
-
-	h4 {
-		font-size: 1.5em;
-	}
-
-	h5 {
-		font-size: 1.5em;
-	}
-
-	h6 {
-		font-size: 1.5em;
-	}
 
 	@media screen and (max-width: 980px) {
 
@@ -292,17 +284,38 @@ input, select, textarea {
 
 	}
 
-	@media screen and (max-width: 736px) {
-
-		h2 {
-			font-size: 2em;
-		}
-
-		h3 {
-			font-size: 1.5em;
-		}
-
+@media screen and (max-width: 736px) {
+	h1 {
+	    font-size: 1.2em;
 	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.3em;
+	}
+
+	h4, h5, h6 {
+	   font-size: 1.4em;
+	}
+
+	p {
+	    font-size:
+	}
+
+}
+
+
+		@media screen and (max-width: 360px) {
+
+			h1 {
+				font-size: 1.75em;
+			}
+
+		}
+
 
 	sub {
 		font-size: 0.8em;
@@ -350,7 +363,7 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-bottom: solid 1px #c9c9c9;
-		margin: 2em 0;
+		margin: 2em 0 1em 0;
 	}
 
 		hr.major {
@@ -370,8 +383,9 @@ input, select, textarea {
 	}
 
 
-/* Section/Article */
-
+/* -----------------------------------------------
+              SECTION / ARTICLE
+-------------------------------------------------- */
 	section.special, article.special {
 		text-align: center;
 	}
@@ -388,8 +402,9 @@ input, select, textarea {
 
 	}
 
-/* Icon */
-
+/* -----------------------------------------------
+                      ICON
+-------------------------------------------------- */
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
@@ -454,8 +469,9 @@ input, select, textarea {
 				background-color: rgba(242, 132, 158, 0.1);
 			}
 
-/* List */
-
+/* -----------------------------------------------
+                    LIST
+-------------------------------------------------- */
 	ol {
 		list-style: circle;
 		margin: 0 0 0em 0;
@@ -506,8 +522,9 @@ input, select, textarea {
 			margin-left: 2em;
 		}
 
-/* Actions */
-
+/* -----------------------------------------------
+                    ACTIONS
+-------------------------------------------------- */
 	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -628,8 +645,9 @@ input, select, textarea {
 
 		}
 
-/* Icons */
-
+/* -----------------------------------------------
+                      ICONS
+-------------------------------------------------- */
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -642,8 +660,9 @@ input, select, textarea {
 			padding: 0.5em 0 0 1em;
 		}
 
-/* Box */
-
+/* -----------------------------------------------
+                      BOX
+-------------------------------------------------- */
 	.box {
 		border-radius: 4px;
 		border: solid 1px #c9c9c9;
@@ -761,7 +780,7 @@ input, select, textarea {
 		}
 
 		table tfoot {
-			border-top: solid 2px #c9c9c9;
+			border-top: solid 0px #c9c9c9;
 		}
 
 		table.alt {
@@ -790,8 +809,9 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Header */
-
+/* -----------------------------------------------
+                    HEADER
+-------------------------------------------------- */
 	#header {
 		padding: 0.5em 0 0.1em 0 ;
 	}
@@ -801,11 +821,12 @@ input, select, textarea {
 			border-bottom: 0;
 			color: #a5a58d;
 			font-weight: 600;
-			letter-spacing: 0.05em;
+			letter-spacing: 0.01em;
 			margin: 0 0 2em 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
+			font-size: 0.8;
 		}
 
 			#header .logo > * {
@@ -825,6 +846,7 @@ input, select, textarea {
 
 		#header nav {
 			position: absolute;
+			display: block;
 			right: 2em;
 			top: 1em;
 			z-index: 10000;
@@ -854,13 +876,13 @@ input, select, textarea {
 						position: relative;
 						height: 2em;
 						line-height: 2em;
-						padding: 0 1em;
-						background-color: rgba(255, 255, 255, 0.5);
-						border-radius: 4px;
+						padding: 0 1.2em 0 0em;
+					/*	background-color: rgba(255, 255, 255, 0.5);
+					*/	border-radius: 4px;
 						border: 0;
 						font-size: 0.8em;
 						font-weight: 900;
-						letter-spacing: 0.1em;
+						letter-spacing: 0.01em;
 						text-transform: uppercase;
 					}
 
@@ -926,8 +948,9 @@ input, select, textarea {
 
 		}
 
-/* Menu */
-
+/* -----------------------------------------------
+                    MENU
+-------------------------------------------------- */
 	#wrapper {
 		-moz-transition: opacity 0.45s ease;
 		-webkit-transition: opacity 0.45s ease;
@@ -1112,8 +1135,9 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-/* Main */
-
+/* -----------------------------------------------
+                    MAIN CONTENT
+-------------------------------------------------- */
 	#main {
 		padding: 0em 0 6em 0 ;
 	}
@@ -1126,8 +1150,9 @@ input, select, textarea {
 
 		}
 
-/* Footer */
-
+/* -----------------------------------------------
+                    FOOTER
+-------------------------------------------------- */
 	#footer {
 		/*-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
@@ -1135,15 +1160,15 @@ input, select, textarea {
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out; */
 		width: 100%;
 		max-width: 100%;
-		margin-top: 2rem;
+		margin-top: 1rem;
 		text-align: center;
 	}
 
 		#footer .copyright {
-			letter-spacing: 0.2rem;
+			letter-spacing: 0.1rem;
 			font-size: 0.6rem;
 			opacity: 1;
-			margin-bottom: 2;
+			margin-bottom: 1;
 			text-transform: uppercase;
 		}
 
@@ -1164,8 +1189,9 @@ input, select, textarea {
 		}
 */
 
-/* Wrapper */
-
+/* -----------------------------------------------
+                      WRAPPER
+-------------------------------------------------- */
 	#wrapper > * > .inner {
 		width: 100%;
 		max-width: 68em;
