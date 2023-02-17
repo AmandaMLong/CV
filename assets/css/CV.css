@@ -140,7 +140,7 @@ input, select, textarea {
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		*/ text-decoration: none;
 		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		border-bottom: dotted 2.4px #ffcc5f;
 	}
 
 		a:hover {
@@ -161,14 +161,13 @@ input, select, textarea {
 	}
 
 	.hangingindent {
-		padding-left: 22px ;
-		text-indent: -22px ;
-}
+  padding-left: 22px ;
+  text-indent: -22px ;
+  }
 
-p.indent {
-    text-indent: 30px;
-}
-
+        p.indent {
+            text-indent: 30px;
+        }
 /*
 	h1 {
 		font-size: 2.2em;
@@ -494,7 +493,7 @@ p.indent {
 				}
 
 	dl {
-		margin: 0 0 0.3em 0;
+		margin: 0 0 0.1em 0;
 	}
 
 		dl dt {
@@ -1143,13 +1142,12 @@ p.indent {
 		#footer .copyright {
 			letter-spacing: 0.2rem;
 			font-size: 0.6rem;
-			color: rgba(88, 88, 88, 0.5);
 			opacity: 1;
-			margin-bottom: 1;
+			margin-bottom: 2;
 			text-transform: uppercase;
 		}
 
-		body.is-article-visible #footer {
+		/*body.is-article-visible #footer {
 			-moz-transform: scale(0.95);
 			-webkit-transform: scale(0.95);
 			-ms-transform: scale(0.95);
@@ -1158,13 +1156,13 @@ p.indent {
 			-webkit-filter: blur(0.1rem);
 			-ms-filter: blur(0.1rem);
 			filter: blur(0.1rem);
-			opacity: 0.75;
+			opacity: 1;
 		}
 
 		body.is-preload #footer {
-			opacity: 0.75;
+			opacity: 1;
 		}
-
+*/
 
 /* Wrapper */
 
