@@ -209,6 +209,7 @@ input, select, textarea {
 		margin: 10px 0 20px;
 		color: #8da0a5;
 		font-size: 1.3em;
+		margin-top: 20px;
 	}
 
 	h1 span {
@@ -808,7 +809,19 @@ input, select, textarea {
 -------------------------------------------------- */
 	#header {
 		padding: 0.5em 0 0.1em 0 ;
+		background: rgba(157, 178, 184, 0.3);
+		height: 2.5em;
+
 	}
+
+	    #header .title {
+	        font-size: 1em;
+	    }
+
+		    #header .title:hover {
+				font-size: 1.1em;
+				font-weight: 900;
+			}
 
 		#header .logo {
 			display: block;
@@ -839,9 +852,8 @@ input, select, textarea {
 				}
 
 		#header nav {
-			position: absolute;
-			display: block;
-			right: 2em;
+			display: inline-block;
+			float: right;
 			top: 1em;
 			z-index: 10000;
 		}
@@ -861,16 +873,15 @@ input, select, textarea {
 			}
 
 				#header nav ul li {
-					display: block;
+					display: inline-block;
 					padding: 0;
 				}
 
 					#header nav ul li a {
-						display: block;
+						display: inline-block;
 						position: relative;
 						height: 2em;
-						line-height: 2em;
-						padding: 0 1.2em 0 0em;
+						padding: 0 0em 0 1em;
 					/*	background-color: rgba(255, 255, 255, 0.5);
 					*/	border-radius: 4px;
 						border: 0;
@@ -896,11 +907,11 @@ input, select, textarea {
 					}
 
 						#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
-						/*	-moz-transition: opacity 0.2s ease;
+							-moz-transition: opacity 0.2s ease;
 							-webkit-transition: opacity 0.2s ease;
 							-ms-transition: opacity 0.2s ease;
 							transition: opacity 0.2s ease;
-						*/	content: '';
+							content: '';
 							display: block;
 							position: absolute;
 							top: 0;
@@ -935,17 +946,36 @@ input, select, textarea {
 			#header {
 				padding: 0.5em 0 0.1em 0 ;
 			}
-
 				#header nav {
 					right: 0.5em;
 					top: 0.5em;
 				}
-
 					#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
 						background-size: 1.5em 1.5em;
 					}
 
 		}
+
+@media screen and (max-width: 576px) {
+
+	#header {
+		height: 2.5em;
+	}
+
+	    #header .title {
+	        font-size: .7em;
+	        letter-spacing: 0em;
+	    }
+
+			#header nav ul li a {
+				padding: 0 0em 0 1em;
+				font-size: 0.6em;
+				font-weight: 900;
+				letter-spacing: 0em;
+				text-transform: uppercase;
+			}
+}
+
 
 /* -----------------------------------------------
                     MENU
