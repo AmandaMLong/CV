@@ -241,6 +241,7 @@ input, select, textarea {
         text-align: left;
 		letter-spacing: 0.02em;
 		font-size: 1.5em;
+		text-transform: uppercase;
 	}
 
 	h5 {
@@ -250,6 +251,7 @@ input, select, textarea {
         text-align: left;
 		letter-spacing: 0.02em;
 		font-size: 1.5em;
+		text-transform: uppercase;
 	}
 
 		h6 {
@@ -259,6 +261,7 @@ input, select, textarea {
         text-align: left;
 		letter-spacing: 0.02em;
 		font-size: 1.5em;
+		text-transform: uppercase;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
