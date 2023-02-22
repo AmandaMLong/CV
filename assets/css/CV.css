@@ -1180,7 +1180,7 @@ input, select, textarea {
 		}
 
 /* -----------------------------------------------
-                    FOOTER
+                  FOOTER
 -------------------------------------------------- */
 	#footer {
 	    width: 100%;
@@ -1193,7 +1193,7 @@ input, select, textarea {
 			letter-spacing: 0.2rem;
 			font-size: 0.6rem;
 			opacity: .8;
-			margin-bottom: 1;
+			margin-bottom: 0em;
 			text-transform: uppercase;
 		}
 
