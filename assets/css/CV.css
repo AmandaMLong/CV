@@ -471,11 +471,14 @@ input, select, textarea {
 		list-style: circle;
 		margin: 0 0 0em 0;
 		padding-left: 1.25em;
-		color: #8da0a5 !important;
 	}
 
 		ol li {
 			padding-left: 0.25em;
+		}
+
+		ol li::marker {
+			color: #8da0a5;
 		}
 
 	ul {
@@ -483,11 +486,14 @@ input, select, textarea {
 		margin: 0 0 0em 0;
 		padding-left: 2em;
 		padding-top: 0.4em;
-		color: #8da0a5 !important;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+		}
+
+		ul li::marker {
+			color: #8da0a5;
 		}
 
 		ul.alt {
