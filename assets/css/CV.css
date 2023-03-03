@@ -259,7 +259,7 @@ input, select, textarea {
 		font-weight: 600;
 		line-height: .3;
 		margin: 0.1em 0 .5em 0;
-        text-align: left;
+      		text-align: left;
 		letter-spacing: 0.02em;
 		font-size: 1.5em;
 		text-transform: uppercase;
@@ -267,12 +267,13 @@ input, select, textarea {
 
 		h6 {
 		font-weight: 600;
-		line-height: 2;
+		line-height: 1;
 		margin: 1.8rem 0 .5em 0;
-        text-align: left;
+        	text-align: left;
 		letter-spacing: 0.02em;
 		font-size: 1.5em;
 		text-transform: uppercase;
+		text-wrap: normal;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
