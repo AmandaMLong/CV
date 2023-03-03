@@ -240,7 +240,7 @@ input, select, textarea {
 
 	h4 {
 		font-weight: 600;
-		line-height: .3;
+		line-height: 1;
 		margin: 0 0 .5em 0;
         text-align: left;
 		letter-spacing: 0.02em;
@@ -250,7 +250,7 @@ input, select, textarea {
 
 	h5 {
 		font-weight: 600;
-		line-height: .3;
+		line-height: 1;
 		margin: 0.1em 0 .5em 0;
       		text-align: left;
 		letter-spacing: 0.02em;
@@ -260,7 +260,7 @@ input, select, textarea {
 
 		h6 {
 		font-weight: 600;
-		line-height: .3;
+		line-height: 1;
 		margin: 1.8rem 0 .5em 0;
         	text-align: left;
 		letter-spacing: 0.02em;
