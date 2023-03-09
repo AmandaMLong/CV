@@ -752,8 +752,9 @@ input, select, textarea {
 
 			}
 
-/* Table */
-
+/* -----------------------------------------------
+                    TABLES
+-------------------------------------------------- */
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -784,7 +785,7 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 2px #c9c9c9;
+			border-bottom: solid 3px #8da0a5 !important;
 		}
 
 		table tfoot {
